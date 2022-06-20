@@ -5,19 +5,16 @@
 #ifndef PATTERNSCAN_MEM_H
 #define PATTERNSCAN_MEM_H
 
-#include <array>
-#include <cstddef>
-#include <cstdint>
 #include <iostream>
+#include <optional>
 #include <sstream>
-#include <list>
-#include <memory>
 #include <stdexcept>
+#include <vector>
 
 void* scan_codestyle(
         void* start,
         uintptr_t length,
-        char const *bytes,
+        uint8_t const *bytes,
         bool const *mask,
         std::size_t pat_len);
 
